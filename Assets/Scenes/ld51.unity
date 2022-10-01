@@ -300,7 +300,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
-      value: Card
+      value: Card1
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_RootOrder
@@ -348,6 +348,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+--- !u!1 &81130063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+  m_PrefabInstance: {fileID: 81130062}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &289244061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -357,7 +362,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
-      value: Card (2)
+      value: Card3
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_RootOrder
@@ -405,6 +410,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+--- !u!1 &289244062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+  m_PrefabInstance: {fileID: 289244061}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &296109634
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +683,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
-      value: Card (3)
+      value: Card4
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_RootOrder
@@ -721,6 +731,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+--- !u!1 &854913605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+  m_PrefabInstance: {fileID: 854913604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &927401104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -730,7 +745,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
-      value: Card (1)
+      value: Card2
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_RootOrder
@@ -778,6 +793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+--- !u!1 &927401105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+  m_PrefabInstance: {fileID: 927401104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1089370615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -787,7 +807,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
-      value: Card (4)
+      value: Card5
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_RootOrder
@@ -835,6 +855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+--- !u!1 &1089370616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+  m_PrefabInstance: {fileID: 1089370615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1215970726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
@@ -849,7 +874,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
-      value: Card (5)
+      value: Card6
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_RootOrder
@@ -902,6 +927,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
   m_PrefabInstance: {fileID: 1339134924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1339134926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+  m_PrefabInstance: {fileID: 1339134924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1476393802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
@@ -931,7 +961,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
-      value: Card (6)
+      value: Card7
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_RootOrder
@@ -955,15 +985,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -982,6 +1012,11 @@ PrefabInstance:
 --- !u!4 &1851581980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4173258538934849448, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+  m_PrefabInstance: {fileID: 1851581979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1851581981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
   m_PrefabInstance: {fileID: 1851581979}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1930147727638917953
@@ -1039,5 +1074,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: gameCards.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: gameCards.Array.data[0]
+      value: 
+      objectReference: {fileID: 81130063}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: gameCards.Array.data[1]
+      value: 
+      objectReference: {fileID: 927401105}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: gameCards.Array.data[2]
+      value: 
+      objectReference: {fileID: 289244062}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: gameCards.Array.data[3]
+      value: 
+      objectReference: {fileID: 854913605}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: gameCards.Array.data[4]
+      value: 
+      objectReference: {fileID: 1089370616}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: gameCards.Array.data[5]
+      value: 
+      objectReference: {fileID: 1339134926}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: gameCards.Array.data[6]
+      value: 
+      objectReference: {fileID: 1851581981}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
