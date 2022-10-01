@@ -39,10 +39,7 @@ public class CardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       for (int i = 0; i < gameCards.Count; i++)
-        {
-            gameCards[i].GetComponent<GameCard>().setManagerAndIndex(this, i);
-        }
+
     }
 
     public void NewTurn()
@@ -72,7 +69,6 @@ public class CardManager : MonoBehaviour
             throw new System.Exception("invalid hand size - exceeded max");
 
         ApplyCards();
-
     }
 
     void ApplyCards()
@@ -91,10 +87,11 @@ public class CardManager : MonoBehaviour
         }
     }
 
-    public void PlayCard(int index)
+    public void PlayCard(Card card)
     {
-        discard.Add(hand[index]);
-        hand.RemoveAt(index);
+        discard.Add(card);
+        hand.Remove(card);
+        card.Play();
         ApplyCards();
     }
 
