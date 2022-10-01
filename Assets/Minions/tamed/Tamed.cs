@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bewitched : MonoBehaviour
+public class Tamed : MonoBehaviour
 {
     private float moveSpeed = 5;
 
@@ -20,8 +20,9 @@ public class Bewitched : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position += Vector3.left * moveSpeed * Time.fixedDeltaTime;
+        transform.position += Vector3.right * moveSpeed * Time.fixedDeltaTime;
     }
+
 
     private void OnMouseDown()
     {
