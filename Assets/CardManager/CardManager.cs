@@ -43,7 +43,7 @@ public class CardManager : MonoBehaviour
 
     }
 
-    void NewTurn()
+    public void NewTurn()
     {
         foreach (var c in hand)
             discard.Add(c);
@@ -52,7 +52,7 @@ public class CardManager : MonoBehaviour
             Draw();
     }
 
-    void Draw()
+    public void Draw()
     {
         if (deck.Count == 0)
         {
