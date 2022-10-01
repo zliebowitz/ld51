@@ -13,4 +13,8 @@ public class Card
         color = color_list[Random.Range(0, color_list.Length)];
     }
 
+    public void Play()
+    {
+
+    }
 }

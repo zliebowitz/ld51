@@ -39,8 +39,10 @@ public class CardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
-
+       for (int i = 0; i < gameCards.Count; i++)
+        {
+            gameCards[i].GetComponent<GameCard>().setManagerAndIndex(this, i);
+        }
     }
 
     public void NewTurn()
@@ -87,6 +89,13 @@ public class CardManager : MonoBehaviour
 
             gameCard.GetComponent<GameCard>().ApplyCard(card);
         }
+    }
+
+    public void PlayCard(int index)
+    {
+        discard.Add(hand[index]);
+        hand.RemoveAt(index);
+        ApplyCards();
     }
 
     // Update is called once per frame
