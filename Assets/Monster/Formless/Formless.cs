@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Formless : MonoBehaviour
 {
-    private float moveSpeed = 10;
+    public UnitStats unitStats; //populate in the inspector.
     private bool pauseMovement = false;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class Formless : MonoBehaviour
     private void FixedUpdate()
     {
         if (!pauseMovement)
-            transform.position += Vector3.left * moveSpeed * Time.fixedDeltaTime;
+            transform.position += Vector3.left * unitStats.speed * Time.fixedDeltaTime;
     }
 
     private void OnMouseDown()

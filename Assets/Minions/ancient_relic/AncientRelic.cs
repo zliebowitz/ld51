@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AncientRelic : MonoBehaviour
 {
-    private float moveSpeed = 2;
+    public UnitStats unitStats; //populate in the inspector.
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class AncientRelic : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position += Vector3.right * moveSpeed * Time.fixedDeltaTime;
+        transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
     }
 
 

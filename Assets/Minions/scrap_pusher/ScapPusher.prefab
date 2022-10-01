@@ -157,3 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06d5e9f66273d054b8fe7dc4bd5a42dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitStats:
+    health: 10
+    damage: 10
+    range: 10
+    speed: 10
