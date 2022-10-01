@@ -5,22 +5,22 @@ using UnityEngine;
 public class Tamed : MonoBehaviour
 {
     public UnitStats unitStats; //populate in the inspector.
-
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void FixedUpdate()
     {
-        transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
+        if (!TOKObjectController.GetPause())
+            transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
     }
 
 
@@ -28,4 +28,5 @@ public class Tamed : MonoBehaviour
     {
         GetComponent<Animator>().SetTrigger("Attack");
     }
+
 }

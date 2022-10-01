@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bewitched : MonoBehaviour
 {
     public UnitStats unitStats; //populate in the inspector.
-    private bool pauseMovement = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +19,7 @@ public class Bewitched : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!pauseMovement)
+        if (!TOKObjectController.GetPause())
             transform.position += Vector3.left * unitStats.speed * Time.fixedDeltaTime;
     }
 
@@ -29,7 +28,4 @@ public class Bewitched : MonoBehaviour
         GetComponent<Animator>().SetTrigger("Attack");
     }
 
-    public void SetPause(bool pause){
-        pauseMovement = pause;
-    }
 }

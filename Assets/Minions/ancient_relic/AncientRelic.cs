@@ -20,7 +20,8 @@ public class AncientRelic : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
+        if (!TOKObjectController.GetPause())
+            transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
     }
 
 

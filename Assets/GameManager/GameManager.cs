@@ -7,6 +7,10 @@ public class GameManager : MonoBehaviour
     public float targetTime = 10.0f;
     public bool play = false;
     List<GameObject> monsters = new List<GameObject>();
+    List<GameObject> minions = new List<GameObject>();
+
+    public TOKObjectController tokController = new TOKObjectController();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +36,8 @@ public class GameManager : MonoBehaviour
     {
         play = false;
         targetTime = 10.0f;
-        setPauseAll(true);
+        // setPauseAll(true);
+        TOKObjectController.SetPause(true);
     }
 
     void OnGUI()
@@ -56,24 +61,21 @@ public class GameManager : MonoBehaviour
 
         InstantiationMonster devourerObject = GameObject.Find("DevourerObject").GetComponent<InstantiationMonster>();
         monsters.Add(devourerObject.New());
+        
+        
+        InstantiationMinion tamedObject = GameObject.Find("TamedObject").GetComponent<InstantiationMinion>();
+        minions.Add(tamedObject.New());
 
-        setPauseAll(false);
+        InstantiationMinion scapPusherObject = GameObject.Find("ScapPusherObject").GetComponent<InstantiationMinion>();
+        minions.Add(scapPusherObject.New());
+
+        InstantiationMinion ancientRelicObject = GameObject.Find("AncientRelicObject").GetComponent<InstantiationMinion>();
+        minions.Add(ancientRelicObject.New());
+
+        InstantiationMinion mechCasterObject = GameObject.Find("MechCasterObject").GetComponent<InstantiationMinion>();
+        minions.Add(mechCasterObject.New());
+
+        TOKObjectController.SetPause(false);
     }
-
-    public void setPauseAll(bool pause){
-        foreach (var mon in monsters)
-        {
-            var mon_b = mon.GetComponent<Bewitched>();
-            if (mon_b != null)
-                mon_b.SetPause(pause);
-            var mon_f = mon.GetComponent<Formless>();
-            if (mon_f != null)
-                mon_f.SetPause(pause);
-            var mon_d = mon.GetComponent<Devourer>();
-            if (mon_d != null)
-                mon_d.SetPause(pause);
-        }
-    }
-
 
 }

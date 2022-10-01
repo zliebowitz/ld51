@@ -5,7 +5,6 @@ using UnityEngine;
 public class ScrapPusher : MonoBehaviour
 {
     public UnitStats unitStats; //populate in the inspector.
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +19,8 @@ public class ScrapPusher : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
+        if (!TOKObjectController.GetPause())
+            transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
     }
 
 
