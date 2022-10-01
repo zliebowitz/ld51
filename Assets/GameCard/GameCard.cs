@@ -6,12 +6,13 @@ public class GameCard : MonoBehaviour
 {
     CardManager manager = null;
     Card card = null;
+    SpriteRenderer squareRenderer = null;
 
     public void ApplyCard(Card card)
     {
         this.card = card;
         gameObject.SetActive(true);
-        gameObject.GetComponent<SpriteRenderer>().color = card.color;
+        squareRenderer.color = card.color;
     }
 
     public void ClearCard()
@@ -24,6 +25,7 @@ public class GameCard : MonoBehaviour
     void Start()
     {
         manager = GameObject.Find("CardManager").GetComponent<CardManager>();
+        squareRenderer = transform.Find("Square").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
