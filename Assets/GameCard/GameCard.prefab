@@ -319,6 +319,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3298c6328c868454d915d1920f677272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  squareRenderer: {fileID: 3187886446607525283}
+  nameText: {fileID: 1697035245718359215}
+  cost: {fileID: 6639086223364385354}
+  description: {fileID: 5113545520662363084}
 --- !u!61 &1424568538056646323
 BoxCollider2D:
   m_ObjectHideFlags: 0

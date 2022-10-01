@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameCard : MonoBehaviour
 {
     CardManager manager = null;
     Card card = null;
-    SpriteRenderer squareRenderer = null;
+    public SpriteRenderer squareRenderer = null;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI cost;
+    public TextMeshProUGUI description;
 
     public void ApplyCard(Card card)
     {
         this.card = card;
         gameObject.SetActive(true);
         squareRenderer.color = card.color;
+        nameText.text = card.name;
+        cost.text = "" + card.cost;
+        description.text = card.description;
     }
 
     public void ClearCard()
@@ -25,7 +32,6 @@ public class GameCard : MonoBehaviour
     void Start()
     {
         manager = GameObject.Find("CardManager").GetComponent<CardManager>();
-        squareRenderer = transform.Find("Square").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame

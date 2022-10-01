@@ -27,9 +27,11 @@ public class CardManager : MonoBehaviour
     private void Awake()
     {
         max_hand_size = gameCards.Count;
+        Color[] color_list = new Color[] { Color.blue, Color.cyan, Color.gray, Color.green, Color.magenta, Color.red, Color.white, Color.yellow };
         for (int i = 0; i < deck_size; i++)
         {
-            deck.Add(new Card());
+            Color color = color_list[Random.Range(0, color_list.Length)];
+            deck.Add(new Card(color, "" + i, 0, "" + i));
         }
         // Not strictly needed at the itme of writing, but can deal with alter.
         Shuffle<Card>(deck);

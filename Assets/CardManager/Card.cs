@@ -6,11 +6,16 @@ public class Card
 {
     public Color color;
 
-    private static Color[] color_list = new Color[] { Color.blue, Color.cyan, Color.gray, Color.green, Color.magenta, Color.red, Color.white, Color.yellow};
+    public string name;
+    public int cost;
+    public string description;
 
-    public Card()
+    public Card(Color color,string name, int cost, string description)
     {
-        color = color_list[Random.Range(0, color_list.Length)];
+        this.color = color;
+        this.name = name;
+        this.cost = cost;
+        this.description = description;
     }
 
     public void Play()
