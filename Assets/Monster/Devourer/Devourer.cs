@@ -14,5 +14,11 @@ public class Devourer : MonoBehaviour
     void Update()
     {
         
+        
+    }
+
+    private void FixedUpdate()
+    {
+        transform.position += Vector3.left * 10 * Time.fixedDeltaTime;
     }
 }
