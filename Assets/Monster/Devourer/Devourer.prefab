@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7786083469490721448}
   - component: {fileID: 7786083469490721449}
   - component: {fileID: 933644887273581878}
+  - component: {fileID: 5212342535167363107}
   m_Layer: 0
   m_Name: Devourer
   m_TagString: Untagged
@@ -118,3 +119,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de051944ed291d4ea9ea8526b84502a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &5212342535167363107
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7786083469490721450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 64, y: 64}
+    newSize: {x: 64, y: 64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -16, y: -5}
+      - {x: -23, y: -7}
+      - {x: -23, y: -22}
+      - {x: -16, y: -29}
+      - {x: 8, y: -29}
+      - {x: 24, y: -28}
+      - {x: 26, y: -27}
+      - {x: 26, y: -20}
+      - {x: 20, y: -5}

@@ -20,4 +20,9 @@ public class Formless : MonoBehaviour
     {
         transform.position += Vector3.left * 10 * Time.fixedDeltaTime;
     }
+
+    private void OnMouseDown()
+    {
+        GetComponent<Animator>().SetTrigger("Attack");
+    }
 }
