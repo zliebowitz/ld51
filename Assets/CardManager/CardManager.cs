@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CardManager : MonoBehaviour
 {
     public List<GameObject> gameCards;  //Populate with inspector
     int max_hand_size; //Set based on gameCards setup.
+    public int mana_total;
+    public TextMeshProUGUI mana_text;
 
     List<Card> deck = new List<Card>();
     List<Card> discard = new List<Card>();
     List<Card> hand = new List<Card>();
     int deck_size = 20;
     int initial_hand_size = 4;
+    int mana_used = 0;
 
     void Shuffle<T>(List<T> list)
     {
@@ -31,7 +35,7 @@ public class CardManager : MonoBehaviour
         for (int i = 0; i < deck_size; i++)
         {
             Color color = color_list[Random.Range(0, color_list.Length)];
-            deck.Add(new Card(color, "" + i, 0, "" + i));
+            deck.Add(new Card(color, "" + i, Random.Range(0,4), "" + i));
         }
         // Not strictly needed at the itme of writing, but can deal with alter.
         Shuffle<Card>(deck);
@@ -49,6 +53,7 @@ public class CardManager : MonoBehaviour
         foreach (var c in hand)
             discard.Add(c);
         hand.Clear();
+        mana_used = 0;
         for (int i = 0; i < initial_hand_size; i++)
             Draw();
     }
@@ -91,15 +96,18 @@ public class CardManager : MonoBehaviour
 
     public void PlayCard(Card card)
     {
-        discard.Add(card);
+        if (card.cost + mana_used > mana_total)
+            return;
+        mana_used += card.cost;
         hand.Remove(card);
         card.Play();
+        discard.Add(card);
         ApplyCards();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        mana_text.text = (mana_total - mana_used) + " / " + mana_total;
     }
 }
