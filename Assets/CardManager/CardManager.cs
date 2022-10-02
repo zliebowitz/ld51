@@ -57,11 +57,16 @@ public class CardManager : MonoBehaviour
 
     }
 
-    public void NewTurn()
+    public void EndTurn()
     {
         foreach (var c in hand)
             discard.Add(c);
         hand.Clear();
+        ApplyCards();
+    }
+
+    public void NewTurn()
+    {
         mana_used = 0;
         for (int i = 0; i < initial_hand_size; i++)
             Draw();

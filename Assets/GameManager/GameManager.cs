@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public bool play = false;
     List<GameObject> monsters = new List<GameObject>();
     List<GameObject> minions = new List<GameObject>();
+    public CardManager cardManager;
     
     public TOKObjectController tokController = new TOKObjectController();
     
@@ -19,6 +20,12 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    }
+
+
+    private void Awake()
+    {
+        cardManager.NewTurn();
     }
 
     // Update is called once per frame
@@ -43,10 +50,14 @@ public class GameManager : MonoBehaviour
         // setPauseAll(true);
         TOKObjectController.SetPause(true);
         timer_text.text = "Play";
+        cardManager.NewTurn();
     }
 
     public void Play()
     {
+        if (play == true)
+            return;
+        cardManager.EndTurn();
         play = true;
 
         InstantiationMonster bewitchedObject = GameObject.Find("BewitchedObject").GetComponent<InstantiationMonster>();
