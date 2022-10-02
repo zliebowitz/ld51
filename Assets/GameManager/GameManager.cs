@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public TOKObjectController tokController = new TOKObjectController();
     
     public TextMeshProUGUI timer_text;
+
+    public List<GameObject> monsters_to_spawn;
     
     // Start is called before the first frame update
     void Start()
@@ -60,14 +62,10 @@ public class GameManager : MonoBehaviour
         cardManager.EndTurn();
         play = true;
 
-        InstantiationMonster bewitchedObject = GameObject.Find("BewitchedObject").GetComponent<InstantiationMonster>();
-        monsters.Add(bewitchedObject.New());
-
-        InstantiationMonster formlessObject = GameObject.Find("FormlessObject").GetComponent<InstantiationMonster>();
-        monsters.Add(formlessObject.New());
-
-        InstantiationMonster devourerObject = GameObject.Find("DevourerObject").GetComponent<InstantiationMonster>();
-        monsters.Add(devourerObject.New());
+        foreach (var monster in monsters_to_spawn)
+        {
+            Instantiate(monster, new Vector3(209f, 14.9f, 0f), Quaternion.identity);
+        }
 
         TOKObjectController.SetPause(false);
     }
