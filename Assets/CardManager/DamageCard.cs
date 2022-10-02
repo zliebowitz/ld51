@@ -34,7 +34,7 @@ public class DamageCard : Card
                 UnitStats stats = logic.unitStats;
                 if (stats == null)
                     continue;
-                stats.health -= 2;
+                stats.health -= damage_amount;
             }
         }
     }
