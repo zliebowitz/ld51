@@ -10,6 +10,9 @@ public class CardManager : MonoBehaviour
     public int mana_total;
     public TextMeshProUGUI mana_text;
     public List<SpawnCard> all_spawn_cards;
+    public List<HealCard> all_heal_cards;
+    public List<DamageCard> all_damage_cards;
+
 
     List<Card> all_cards = new List<Card>();
 
@@ -20,11 +23,22 @@ public class CardManager : MonoBehaviour
     int initial_hand_size = 4;
     int mana_used = 0;
 
-    void Shuffle<T>(List<T> list)
+    public static void Shuffle<T>(List<T> list)
     {
         for (int i = 0; i < list.Count; i++)
         {
             int other = Random.Range(i, list.Count);
+            T temp = list[i];
+            list[i] = list[other];
+            list[other] = temp;
+        }
+    }
+
+    public static void Shuffle<T>(T[] list)
+    {
+        for (int i = 0; i < list.Length; i++)
+        {
+            int other = Random.Range(i, list.Length);
             T temp = list[i];
             list[i] = list[other];
             list[other] = temp;

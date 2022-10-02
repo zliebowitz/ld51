@@ -1941,8 +1941,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1851581981}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[0].cost
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[0].name
+      value: Heal 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[1].cost
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[1].name
+      value: Heal 2
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[0].cost
@@ -1967,6 +1991,18 @@ PrefabInstance:
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[3].name
       value: Tamed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[0].cost
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[0].name
+      value: Damage 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[1].name
+      value: Destory the World 1
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[0].prefab
@@ -1996,6 +2032,14 @@ PrefabInstance:
       propertyPath: all_spawn_cards.Array.data[3].sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6bb13f9fec5604d6199533da5d2e9ed1, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[0].heal_amount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[1].heal_amount
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[0].description
       value: Humans have combined the old nad new world to create a monstrosity that
@@ -2031,6 +2075,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[1].description
+      value: Some people just want to see the world burn. AMIRITE?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[0].spawnLocation
       value: 
       objectReference: {fileID: 614724004}
@@ -2046,6 +2094,14 @@ PrefabInstance:
       propertyPath: all_spawn_cards.Array.data[3].spawnLocation
       value: 
       objectReference: {fileID: 614724004}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[0].damage_amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[1].damage_amount
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
