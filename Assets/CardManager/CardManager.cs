@@ -20,7 +20,7 @@ public class CardManager : MonoBehaviour
     public GameObject mech_caster_fab;
     public GameObject scrap_pusher_fab;
     public GameObject tamed_fab;
-    public Transform towerTransform;
+    public Transform minionSpawnPoint;
 
     void Shuffle<T>(List<T> list)
     {
@@ -37,7 +37,7 @@ public class CardManager : MonoBehaviour
     {
         max_hand_size = gameCards.Count;
         Color[] color_list = new Color[] { Color.blue, Color.cyan, Color.gray, Color.green, Color.magenta, Color.red, Color.white, Color.yellow };
-        Vector3 towerLocation = towerTransform.position;
+        Vector3 towerLocation = minionSpawnPoint.position;
         for (int i = 0; i < cards_of_each; i++)
         {
             Color color = color_list[Random.Range(0, color_list.Length)];
