@@ -9,6 +9,9 @@ public class CardManager : MonoBehaviour
     int max_hand_size; //Set based on gameCards setup.
     public int mana_total;
     public TextMeshProUGUI mana_text;
+    public List<SpawnCard> all_spawn_cards;
+
+    List<Card> all_cards = new List<Card>();
 
     List<Card> deck = new List<Card>();
     List<Card> discard = new List<Card>();
@@ -16,11 +19,6 @@ public class CardManager : MonoBehaviour
     int cards_of_each = 5;
     int initial_hand_size = 4;
     int mana_used = 0;
-    public GameObject ancient_relic_fab;
-    public GameObject mech_caster_fab;
-    public GameObject scrap_pusher_fab;
-    public GameObject tamed_fab;
-    public Transform minionSpawnPoint;
 
     void Shuffle<T>(List<T> list)
     {
@@ -36,16 +34,21 @@ public class CardManager : MonoBehaviour
     private void Awake()
     {
         max_hand_size = gameCards.Count;
-        Color[] color_list = new Color[] { Color.blue, Color.cyan, Color.gray, Color.green, Color.magenta, Color.red, Color.white, Color.yellow };
-        Vector3 towerLocation = minionSpawnPoint.position;
-        for (int i = 0; i < cards_of_each; i++)
+
+       foreach (var c in all_spawn_cards)
+            all_cards.Add(c);
+
+       foreach (var card in all_cards)
         {
-            Color color = color_list[Random.Range(0, color_list.Length)];
-            deck.Add(new Card(color, "Ancient Relic " + i, Random.Range(0, 4), "Anceint relics were found from eons ago that have somehow not fell apart ... This game is totally realisitc. AMIRITE?", ancient_relic_fab, towerLocation));
-            deck.Add(new Card(color, "Mech Caster " + i, Random.Range(0, 4), "Humans have combined the old nad new world to create a monstrosity that should not exist ... How long til it turns? AMIRITE?", mech_caster_fab, towerLocation));
-            deck.Add(new Card(color, "Scrap Pusher " + i, Random.Range(0, 4), "Push what you don't need? Better than scrapping it? AMIRITE?", scrap_pusher_fab, towerLocation));
-            deck.Add(new Card(color, "Tamed " + i, Random.Range(0, 4), "Also known as whipped! AMIRITE?", tamed_fab, towerLocation));
+            if (card.is_starting)
+            {
+                for (int i = 0; i < cards_of_each; i++)
+                {
+                    deck.Add(card);
+                }
+            }
         }
+
         // Not strictly needed at the itme of writing, but can deal with alter.
         Shuffle<Card>(deck);
         ApplyCards();

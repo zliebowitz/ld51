@@ -16,7 +16,7 @@ public class GameCard : MonoBehaviour
     {
         this.card = card;
         gameObject.SetActive(true);
-        squareRenderer.color = card.color;
+        squareRenderer.sprite = card.sprite;
         nameText.text = card.name;
         cost.text = "" + card.cost;
         description.text = card.description;
