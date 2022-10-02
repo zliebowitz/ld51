@@ -392,3 +392,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTime: 10
   play: 0
+  timer_text: {fileID: 0}
