@@ -7,6 +7,7 @@ using UnityEngine;
 [Serializable]
 public class UnitStats
 {
+    public int maxhealth;
     public int health;
     public int damage;
     public int range;

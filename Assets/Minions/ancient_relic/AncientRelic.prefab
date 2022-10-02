@@ -152,11 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc96be496acfaec4c9c43b7deb99eeb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitStats:
-    health: 10
-    damage: 10
-    range: 10
-    speed: 10
 --- !u!114 &6630657817181827612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitStats:
+    maxhealth: 10
     health: 10
     damage: 10
     range: 20

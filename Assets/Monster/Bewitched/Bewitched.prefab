@@ -120,11 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b48853795c3f54c8a1a64cb954a56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitStats:
-    health: 10
-    damage: 10
-    range: 10
-    speed: 10
 --- !u!60 &8403498577456228316
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -171,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitStats:
+    maxhealth: 10
     health: 10
     damage: 10
     range: 10
