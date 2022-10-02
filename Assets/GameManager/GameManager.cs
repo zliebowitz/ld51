@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,13 +10,14 @@ public class GameManager : MonoBehaviour
     public bool play = false;
     List<GameObject> monsters = new List<GameObject>();
     List<GameObject> minions = new List<GameObject>();
-
+    
     public TOKObjectController tokController = new TOKObjectController();
-
+    
+    public TextMeshProUGUI timer_text;
+    
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -23,10 +26,10 @@ public class GameManager : MonoBehaviour
         if (play)
         {
             targetTime -= Time.deltaTime;
+            timer_text.text = ((int)Math.Round(targetTime)).ToString();
             if (targetTime <= 0.0f)
             {
                 timerEnded();
-                Debug.Log("timerEnd");
             }
         }
 
@@ -38,15 +41,7 @@ public class GameManager : MonoBehaviour
         targetTime = 10.0f;
         // setPauseAll(true);
         TOKObjectController.SetPause(true);
-    }
-
-    void OnGUI()
-    {
-        // int minutes = Mathf.FloorToInt(timer / 60F);
-        // int seconds = Mathf.FloorToInt(timer - minutes * 60);
-        // string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
-        // GUI.Label(new Rect(10, 10, 250, 100), niceTime);
-
+        timer_text.text = "Play";
     }
 
     public void Play()

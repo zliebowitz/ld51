@@ -15,6 +15,6 @@ public class InstantiationMonster : MonoBehaviour
     }
 
     public GameObject New(){
-        return Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        return Instantiate(myPrefab, new Vector3(209f, 14.9f, 0f), Quaternion.identity);
     }
 }
