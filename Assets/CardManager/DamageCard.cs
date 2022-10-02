@@ -18,10 +18,7 @@ public class DamageCard : Card
             MonsterLogic logic = monster.GetComponent<MonsterLogic>();
             if (logic == null)
                 continue;
-            UnitStats stats = logic.unitStats;
-            if (stats == null)
-                continue;
-            stats.health -= 2;
+            logic.Hit(damage_amount);
         }
         if (all_entities)
         {
@@ -31,10 +28,7 @@ public class DamageCard : Card
                 MinionLogic logic = minion.GetComponent<MinionLogic>();
                 if (logic == null)
                     continue;
-                UnitStats stats = logic.unitStats;
-                if (stats == null)
-                    continue;
-                stats.health -= damage_amount;
+                logic.Hit(damage_amount);
             }
         }
     }
