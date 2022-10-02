@@ -1904,6 +1904,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 1595407031342294702, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
+      propertyPath: turnText
+      value: 
+      objectReference: {fileID: 1391956218}
+    - target: {fileID: 1595407031342294702, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
       propertyPath: timer_text
       value: 
       objectReference: {fileID: 344151064}
