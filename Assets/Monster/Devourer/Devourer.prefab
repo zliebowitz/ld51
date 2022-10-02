@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 7786083469490721495}
   - component: {fileID: 7786083469490721448}
   - component: {fileID: 7786083469490721449}
-  - component: {fileID: 933644887273581878}
   - component: {fileID: 5212342535167363107}
+  - component: {fileID: 933644887273581878}
+  - component: {fileID: 9170808616574220506}
   m_Layer: 0
   m_Name: Devourer
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,23 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &933644887273581878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7786083469490721450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9de051944ed291d4ea9ea8526b84502a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitStats:
-    health: 10
-    damage: 10
-    range: 10
-    speed: 10
 --- !u!60 &5212342535167363107
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -158,3 +142,32 @@ PolygonCollider2D:
       - {x: 26, y: -27}
       - {x: 26, y: -20}
       - {x: 20, y: -5}
+--- !u!114 &933644887273581878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7786083469490721450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de051944ed291d4ea9ea8526b84502a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9170808616574220506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7786083469490721450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411dedfd266e7bc4d80102dde5627e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitStats:
+    health: 10
+    damage: 10
+    range: 10
+    speed: 10

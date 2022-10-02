@@ -4,28 +4,6 @@ using UnityEngine;
 
 public class Bewitched : MonoBehaviour
 {
-    public UnitStats unitStats; //populate in the inspector.
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void FixedUpdate()
-    {
-        if (!TOKObjectController.GetPause())
-            transform.position += Vector3.left * unitStats.speed * Time.fixedDeltaTime;
-    }
-
-    private void OnMouseDown()
-    {
-        GetComponent<Animator>().SetTrigger("Attack");
-    }
 
 }
