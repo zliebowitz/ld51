@@ -165,8 +165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitStats:
-    maxhealth: 10
-    health: 10
-    damage: 10
-    range: 20
-    speed: 10
+    maxhealth: 30
+    health: 30
+    damage: 8
+    range: 30
+    speed: 8

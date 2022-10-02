@@ -10,6 +10,8 @@ public class MinionLogic : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
+    bool attackStarted = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,12 +40,28 @@ public class MinionLogic : MonoBehaviour
         var closestMonster = unitPhysics.ClosestMonsterDistance();
         if (closestMonster.Item2 <= unitStats.range)  //Attack Minions
         {
+
             if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !animator.GetBool("Attack"))
             {
+                if(attackStarted)
+                {
+                    MonsterLogic ml = closestMonster.Item1.GetComponent<MonsterLogic>();
+                    if (ml != null)
+                    {
+                        ml.Hit(unitStats.damage);
+                    }
+
+                    attackStarted = false;
+                }
+
                 animator.SetTrigger("Attack");
-                MonsterLogic ml = closestMonster.Item1.GetComponent<MonsterLogic>();
-                ml.Hit(unitStats.damage);
+
             }
+            else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            {
+                attackStarted = true;
+            }
+           
 
         }
         /*        else if (unitPhysics.TowerDistance() <= unitStats.range) //Attack Tower State
