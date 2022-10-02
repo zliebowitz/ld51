@@ -7,10 +7,14 @@ public class Devourer : MonoBehaviour
 
     public UnitStats unitStats; //populate in the inspector.
 
+    private UnitPhysics unitPhysics = new UnitPhysics();
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        animator = GetComponent<Animator>();
+        unitPhysics.Start(this);
     }
 
     // Update is called once per frame
@@ -22,8 +26,33 @@ public class Devourer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!TOKObjectController.GetPause())
-            transform.position += Vector3.left * unitStats.speed * Time.fixedDeltaTime;
+        if (TOKObjectController.GetPause())
+        {
+            return;
+        }
+
+        if(unitPhysics.TowerDistance() <= unitStats.range) //Attack Tower State
+        {
+
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !animator.GetBool("Attack"))
+            {
+                animator.SetTrigger("Attack");
+                unitPhysics.TowerHit(unitStats.damage);
+            }
+
+
+        }
+        else //Move Tower State
+        {
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Move") && !animator.GetBool("Move"))
+            {
+                animator.SetTrigger("Move");
+            }
+            else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Move"))
+            {
+                transform.position += Vector3.left * unitStats.speed * Time.fixedDeltaTime;
+            }
+        }
     }
 
     private void OnMouseDown()

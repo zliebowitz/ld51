@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,5 +17,15 @@ public class Tower : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Hit(int damage)
+    {
+        unitStats.health -= damage;
+        if(unitStats.health < 0)
+        {
+            GameObject loser = GameObject.Find("GameManager").transform.Find("LoseScreen").gameObject;
+            loser.SetActive(true);
+        }
     }
 }
