@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -8504165358813102504}
   - component: {fileID: 6993719545385881176}
   - component: {fileID: 4228095447678885127}
+  - component: {fileID: -4124436562698808645}
   m_Layer: 0
   m_Name: Tamed
   m_TagString: Minion
@@ -150,6 +151,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad0c97a2bae1f9c4ea47d680442261bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitStats:
+    health: 10
+    damage: 10
+    range: 10
+    speed: 10
+--- !u!114 &-4124436562698808645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8922713274719032728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929d128c04c11e943b74479de26ff7f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   unitStats:
