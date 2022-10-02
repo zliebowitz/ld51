@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2691513951517946283}
   - component: {fileID: 2691513951517946284}
   - component: {fileID: 2691513951517946285}
+  - component: {fileID: 6630657817181827612}
   m_Layer: 0
   m_Name: AncientRelic
   m_TagString: Minion
@@ -155,4 +156,21 @@ MonoBehaviour:
     health: 10
     damage: 10
     range: 10
+    speed: 10
+--- !u!114 &6630657817181827612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691513951517946286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929d128c04c11e943b74479de26ff7f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitStats:
+    health: 10
+    damage: 10
+    range: 20
     speed: 10
