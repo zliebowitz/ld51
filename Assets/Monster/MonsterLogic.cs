@@ -35,14 +35,17 @@ public class MonsterLogic : MonoBehaviour
             animator.ResetTrigger("Move");
             return;
         }
-
-        if (unitPhysics.ClosestMinionDistance() <= unitStats.range)  //Attack Minions
+        var closestMinion = unitPhysics.ClosestMinionDistance();
+        if (closestMinion.Item2 <= unitStats.range)  //Attack Minions
         {
             if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !animator.GetBool("Attack"))
             {
                 animator.SetTrigger("Attack");
 
             }
+            var ml = closestMinion.Item1.GetComponent<MinionLogic>();
+            ml.unitStats.health -= unitStats.damage;
+            // Debug.Log("Minion " + ml.unitStats.health);
         }
         else if (unitPhysics.TowerDistance() <= unitStats.range) //Attack Tower State
         {

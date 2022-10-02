@@ -22,17 +22,17 @@ public class UnitPhysics
         towerColider = tower.GetComponent<Collider2D>();
     }
 
-    public float ClosestMonsterDistance()
+    public Tuple<GameObject, float> ClosestMonsterDistance()
     {
         return ClosestTaggedDistance("Monster");
     }
 
-    public float ClosestMinionDistance()
+    public Tuple<GameObject, float> ClosestMinionDistance()
     {
         return ClosestTaggedDistance("Minion");
     }
 
-    public float ClosestTaggedDistance(string tag)
+    public Tuple<GameObject, float> ClosestTaggedDistance(string tag)
     {
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag(tag);
@@ -52,9 +52,8 @@ public class UnitPhysics
                 distance = curDistance;
             }
         }
-
         //Debug.Log("Closest " + tag + " Distance: " + distance.ToString());
-        return distance;
+        return new Tuple<GameObject, float>(closest, distance);
     }
 
     public float TowerDistance()
@@ -66,10 +65,10 @@ public class UnitPhysics
     internal void TowerHit(int damage)
     {
         Tower t = tower.GetComponent<Tower>();
-        if(t != null)
+        if (t != null)
         {
             t.Hit(damage);
         }
     }
-       
+
 }
