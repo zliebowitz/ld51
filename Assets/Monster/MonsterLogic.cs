@@ -8,12 +8,16 @@ public class MonsterLogic : MonoBehaviour
 
     private UnitPhysics unitPhysics = new UnitPhysics();
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         unitPhysics.Start(this);
+
+        spriteRenderer.sortingOrder = (100 - (int)transform.position.y);
     }
 
     // Update is called once per frame
