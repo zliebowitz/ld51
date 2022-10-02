@@ -32,6 +32,29 @@ public class UnitPhysics
         return ClosestTaggedDistance("Minion");
     }
 
+    public GameObject[] FindAllGameObjectsWithTagInRange(string tag, float range)
+    {
+        List<GameObject> rtn = new List<GameObject>();
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag(tag);
+        //Debug.Log(tag + " Found: " + gos.Length);
+        Vector3 position = gameObject.transform.position;
+        foreach (GameObject go in gos)
+        {
+            Collider2D gocolider = go.GetComponent<Collider2D>();
+            ColliderDistance2D colliderDistance = collider.Distance(gocolider);
+
+            float curDistance = colliderDistance.distance;
+            if (curDistance > range)
+            {
+                rtn.Add(go);
+            }
+        }
+
+        return rtn.ToArray();
+
+    }
+
     public Tuple<GameObject, float> ClosestTaggedDistance(string tag)
     {
         GameObject[] gos;

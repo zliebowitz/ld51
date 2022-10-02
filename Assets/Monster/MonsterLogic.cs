@@ -46,12 +46,32 @@ public class MonsterLogic : MonoBehaviour
 
                 if (attackStarted)
                 {
-                    MinionLogic ml = closestMinion.Item1.GetComponent<MinionLogic>();
-                    if (ml != null)
+                    if (unitStats.attackAllInRange)
                     {
-                        ml.Hit(unitStats.damage);
+                        GameObject[] gos = unitPhysics.FindAllGameObjectsWithTagInRange("Minion", unitStats.range);
+                        foreach(GameObject go in gos)
+                        {
+                            MinionLogic ml = go.GetComponent<MinionLogic>();
+                            if (ml != null)
+                            {
+                                ml.Hit(unitStats.damage);
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        MinionLogic ml = closestMinion.Item1.GetComponent<MinionLogic>();
+                        if (ml != null)
+                        {
+                            ml.Hit(unitStats.damage);
+                        }
                     }
 
+                    if (unitStats.selfDestructOnAttack)
+                    {
+                        Hit(unitStats.health);
+                    }
                     attackStarted = false;
                 }
                 animator.SetTrigger("Attack");
@@ -72,6 +92,11 @@ public class MonsterLogic : MonoBehaviour
                 if (attackStarted)
                 {
                     unitPhysics.TowerHit(unitStats.damage);
+
+                    if (unitStats.selfDestructOnAttack)
+                    {
+                        Hit(unitStats.health);
+                    }
                     attackStarted = false;
                 }
 

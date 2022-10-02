@@ -12,4 +12,6 @@ public class UnitStats
     public int damage;
     public int range;
     public int speed;
+    public bool selfDestructOnAttack = false;
+    public bool attackAllInRange = false;
 }
