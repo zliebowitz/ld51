@@ -1,5 +1,5 @@
 public class TOKObjectController{
-    private static bool pauseMovement = false;
+    private static bool pauseMovement = true;
     public static void SetPause(bool pause){
         pauseMovement = pause;
     }

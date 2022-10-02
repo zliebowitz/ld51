@@ -19,8 +19,12 @@ public class Tamed : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!TOKObjectController.GetPause())
-            transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
+        if (TOKObjectController.GetPause())
+        {
+            return;
+        }
+
+        transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
     }
 
 
