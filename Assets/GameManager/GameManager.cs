@@ -57,19 +57,6 @@ public class GameManager : MonoBehaviour
 
         InstantiationMonster devourerObject = GameObject.Find("DevourerObject").GetComponent<InstantiationMonster>();
         monsters.Add(devourerObject.New());
-        
-        
-        InstantiationMinion tamedObject = GameObject.Find("TamedObject").GetComponent<InstantiationMinion>();
-        minions.Add(tamedObject.New());
-
-        InstantiationMinion scapPusherObject = GameObject.Find("ScapPusherObject").GetComponent<InstantiationMinion>();
-        minions.Add(scapPusherObject.New());
-
-        InstantiationMinion ancientRelicObject = GameObject.Find("AncientRelicObject").GetComponent<InstantiationMinion>();
-        minions.Add(ancientRelicObject.New());
-
-        InstantiationMinion mechCasterObject = GameObject.Find("MechCasterObject").GetComponent<InstantiationMinion>();
-        minions.Add(mechCasterObject.New());
 
         TOKObjectController.SetPause(false);
     }

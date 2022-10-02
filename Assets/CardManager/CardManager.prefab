@@ -45,3 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCards: []
+  mana_total: 0
+  mana_text: {fileID: 0}
+  ancient_relic_fab: {fileID: 2691513951517946286, guid: 38668e479b49cae408d0840f139ed33c, type: 3}
+  mech_caster_fab: {fileID: 2924372954321610190, guid: 6f87d74e81bf44f458105c22f0912485, type: 3}
+  scrap_pusher_fab: {fileID: 575632229745047433, guid: 8c8325f357f7d104086980b8588a35dd, type: 3}
+  tamed_fab: {fileID: 8922713274719032728, guid: f1b49e7d88e68a94784ddd370ec7b69d, type: 3}
