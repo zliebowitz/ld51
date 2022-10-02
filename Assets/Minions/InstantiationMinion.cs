@@ -15,6 +15,6 @@ public class InstantiationMinion : MonoBehaviour
     }
 
     public GameObject New(){
-        return Instantiate(myPrefab, new Vector3(-200.6f, -3.1f, 0), Quaternion.identity);
+        return Instantiate(myPrefab, new Vector3(-200.6f, -3.1f, 0) + Vector3.up * Random.Range(-20,0), Quaternion.identity);
     }
 }

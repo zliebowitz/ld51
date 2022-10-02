@@ -12,7 +12,7 @@ public class SpawnCard : Card
 
     public override void Play()
     {
-        UnityEngine.Object.Instantiate(prefab, spawnLocation.position, Quaternion.identity);
+        UnityEngine.Object.Instantiate(prefab, spawnLocation.position + Vector3.up * UnityEngine.Random.Range(-10,10), Quaternion.identity);
     }
 
 }
