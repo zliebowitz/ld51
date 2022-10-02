@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     List<GameObject> monsters = new List<GameObject>();
     List<GameObject> minions = new List<GameObject>();
     public CardManager cardManager;
+    public TextMeshProUGUI turnText;
+    int turn = 0;
     
     public TOKObjectController tokController = new TOKObjectController();
     
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        turnText.text = "Turn: " + turn;
         if (play)
         {
             targetTime -= Time.deltaTime;
@@ -59,6 +62,7 @@ public class GameManager : MonoBehaviour
     {
         if (play == true)
             return;
+        turn += 1;
         cardManager.EndTurn();
         play = true;
 
