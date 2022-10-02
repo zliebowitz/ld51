@@ -52,7 +52,7 @@ public class UnitPhysics
                 distance = curDistance;
             }
         }
-        //Debug.Log("Closest " + tag + " Distance: " + distance.ToString());
+        //Debug.Log("Closest " + tag + " with gameobject: " + closest.ToString() + " Distance: " + distance.ToString());
         return new Tuple<GameObject, float>(closest, distance);
     }
 

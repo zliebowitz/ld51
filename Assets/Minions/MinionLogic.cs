@@ -41,10 +41,10 @@ public class MinionLogic : MonoBehaviour
             if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !animator.GetBool("Attack"))
             {
                 animator.SetTrigger("Attack");
-
+                MonsterLogic ml = closestMonster.Item1.GetComponent<MonsterLogic>();
+                ml.Hit(unitStats.damage);
             }
-            var ml = closestMonster.Item1.GetComponent<MonsterLogic>();
-            ml.unitStats.health -= unitStats.damage;
+
         }
         /*        else if (unitPhysics.TowerDistance() <= unitStats.range) //Attack Tower State
                 {
@@ -67,6 +67,15 @@ public class MinionLogic : MonoBehaviour
             {
                 transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
             }
+        }
+    }
+
+    internal void Hit(int damage)
+    {
+        unitStats.health -= damage;
+        if(unitStats.health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 

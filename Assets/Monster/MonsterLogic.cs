@@ -35,17 +35,19 @@ public class MonsterLogic : MonoBehaviour
             animator.ResetTrigger("Move");
             return;
         }
+
+
         var closestMinion = unitPhysics.ClosestMinionDistance();
         if (closestMinion.Item2 <= unitStats.range)  //Attack Minions
         {
             if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !animator.GetBool("Attack"))
             {
                 animator.SetTrigger("Attack");
-
+                MinionLogic ml = closestMinion.Item1.GetComponent<MinionLogic>();
+                ml.Hit(unitStats.damage);
             }
-            var ml = closestMinion.Item1.GetComponent<MinionLogic>();
-            ml.unitStats.health -= unitStats.damage;
-            // Debug.Log("Minion " + ml.unitStats.health);
+
+           
         }
         else if (unitPhysics.TowerDistance() <= unitStats.range) //Attack Tower State
         {
@@ -68,6 +70,15 @@ public class MonsterLogic : MonoBehaviour
             {
                 transform.position += Vector3.left * unitStats.speed * Time.fixedDeltaTime;
             }
+        }
+    }
+
+    internal void Hit(int damage)
+    {
+        unitStats.health -= damage;
+        if (unitStats.health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
