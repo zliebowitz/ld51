@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4435746310473713681}
   - component: {fileID: 6598642707481409094}
   - component: {fileID: -3273970425729321235}
+  - component: {fileID: 3849131471351418812}
   m_Layer: 0
   m_Name: Formless
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,3 +157,20 @@ PolygonCollider2D:
       - {x: 15, y: -12}
       - {x: 6, y: 13}
       - {x: 0, y: 16}
+--- !u!114 &3849131471351418812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4435746310473713682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411dedfd266e7bc4d80102dde5627e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitStats:
+    health: 10
+    damage: 10
+    range: 10
+    speed: 10

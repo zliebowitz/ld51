@@ -22,6 +22,41 @@ public class UnitPhysics
         towerColider = tower.GetComponent<Collider2D>();
     }
 
+    public float ClosestMonsterDistance()
+    {
+        return ClosestTaggedDistance("Monster");
+    }
+
+    public float ClosestMinionDistance()
+    {
+        return ClosestTaggedDistance("Minion");
+    }
+
+    public float ClosestTaggedDistance(string tag)
+    {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag(tag);
+        //Debug.Log(tag + " Found: " + gos.Length);
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = gameObject.transform.position;
+        foreach (GameObject go in gos)
+        {
+            Collider2D gocolider = go.GetComponent<Collider2D>();
+            ColliderDistance2D colliderDistance = collider.Distance(gocolider);
+
+            float curDistance = colliderDistance.distance;
+            if (curDistance < distance)
+            {
+                closest = go;
+                distance = curDistance;
+            }
+        }
+
+        //Debug.Log("Closest " + tag + " Distance: " + distance.ToString());
+        return distance;
+    }
+
     public float TowerDistance()
     {
         ColliderDistance2D colliderDistance = collider.Distance(towerColider);

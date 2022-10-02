@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3100995338281189410}
   - component: {fileID: 4061556445257950213}
   - component: {fileID: 8403498577456228316}
+  - component: {fileID: -5799611218397321667}
   m_Layer: 0
   m_Name: Bewitched
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,3 +158,20 @@ PolygonCollider2D:
       - {x: 12, y: -16}
       - {x: 14, y: -14}
       - {x: 14, y: -8}
+--- !u!114 &-5799611218397321667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3100995338281189409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411dedfd266e7bc4d80102dde5627e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitStats:
+    health: 10
+    damage: 10
+    range: 10
+    speed: 10
