@@ -28,6 +28,8 @@ public class Devourer : MonoBehaviour
     {
         if (TOKObjectController.GetPause())
         {
+            animator.ResetTrigger("Attack");
+            animator.ResetTrigger("Move");
             return;
         }
 
@@ -42,7 +44,7 @@ public class Devourer : MonoBehaviour
 
 
         }
-        else //Move Tower State
+        else //Move to Tower State
         {
             if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Move") && !animator.GetBool("Move"))
             {
@@ -55,8 +57,4 @@ public class Devourer : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
-    {
-        GetComponent<Animator>().SetTrigger("Attack");
-    }
 }
