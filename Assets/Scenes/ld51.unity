@@ -2079,6 +2079,10 @@ PrefabInstance:
       value: Some people just want to see the world burn. AMIRITE?
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[1].all_entities
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[0].spawnLocation
       value: 
       objectReference: {fileID: 614724004}

@@ -8,7 +8,7 @@ public class DamageCard : Card
 {
 
     public int damage_amount;
-    bool all_entities;
+    public bool all_entities;
 
     public override void Play()
     {
