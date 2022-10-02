@@ -87,17 +87,6 @@ public class MinionLogic : MonoBehaviour
            
 
         }
-        /*        else if (unitPhysics.TowerDistance() <= unitStats.range) //Attack Tower State
-                {
-
-                    if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !animator.GetBool("Attack"))
-                    {
-                        animator.SetTrigger("Attack");
-                        unitPhysics.TowerHit(unitStats.damage);
-                    }
-
-
-                }*/
         else //Move to Right
         {
             if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Move") && !animator.GetBool("Move"))
