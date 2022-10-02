@@ -55,6 +55,8 @@ public class CardManager : MonoBehaviour
 
     public void Draw()
     {
+        if (hand.Count == max_hand_size)
+            return;
         if (deck.Count == 0)
         {
             foreach (var card in discard)
@@ -67,8 +69,6 @@ public class CardManager : MonoBehaviour
         Card c = deck[0];
         hand.Add(c);
         deck.RemoveAt(0);
-        if (hand.Count > max_hand_size)
-            throw new System.Exception("invalid hand size - exceeded max");
 
         ApplyCards();
     }
