@@ -30,16 +30,11 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         FindObjectOfType<AudioManager>().PlayMusic("BGM");
-    }
+		cardManager->NewTurn();
+	}
 
-
-    private void Awake()
-    {
-        cardManager.NewTurn();
-    }
-
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         turnText.text = "Turn: " + turn;
         if (play)
