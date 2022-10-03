@@ -2177,6 +2177,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2691513951517946286, guid: 38668e479b49cae408d0840f139ed33c, type: 3}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 84ee963e285ef444ca096656094824e5, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[3].prefab
       value: 
       objectReference: {fileID: 8922713274719032728, guid: f1b49e7d88e68a94784ddd370ec7b69d, type: 3}
