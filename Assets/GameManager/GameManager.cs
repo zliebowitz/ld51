@@ -49,10 +49,10 @@ public class GameManager : MonoBehaviour
 			if (timeToSpawn >= targetTime)
 			{
 				
-				int formlessCost = 9;
-				int formlessGroup = 50;
+				int formlessCost = 10;
+				int formlessGroup = 55;
 				int bewitchedCost = 65;
-				int devourerCost = 140;
+				int devourerCost = 145;
 				int groupCost = 300;
 				
 				float spawnX = 360f;
