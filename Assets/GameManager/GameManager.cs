@@ -151,7 +151,7 @@ public class GameManager : MonoBehaviour
         targetTime = 10.0f;
         // setPauseAll(true);
         TOKObjectController.SetPause(true);
-        timer_text.text = "Play";
+        timer_text.text = "End Turn";
         cardManager.NewTurn();
     }
 
