@@ -193,6 +193,19 @@ public class GameManager : MonoBehaviour
             Instantiate(monster, new Vector3(209f, 14.9f, 0f), Quaternion.identity);
         }*/
 
+	float randomSound = UnityEngine.Random.Range(0.0f, 3.0f);
+	if (randomSound > 2.0f)
+	{
+		FindObjectOfType<AudioManager>().PlaySound("Rahhh");
+	}
+	else if (randomSound > 1.0f)
+	{
+		FindObjectOfType<AudioManager>().PlaySound("Haaa");
+	}
+	else
+	{
+		FindObjectOfType<AudioManager>().PlaySound("Hehhh");
+	}
         TOKObjectController.SetPause(false);
 		
 		waveBalance += (int)(Math.Pow(turn, 1.3) * 10) + 2;
