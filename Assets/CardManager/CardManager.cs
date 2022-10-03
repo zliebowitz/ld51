@@ -12,6 +12,8 @@ public class CardManager : MonoBehaviour
     int mana_total;
     public int max_mana_total = 8;
     public TextMeshProUGUI mana_text;
+    public TextMeshProUGUI deck_text;
+    public TextMeshProUGUI discard_text;
     public List<SpawnCard> all_spawn_cards;
     public List<HealCard> all_heal_cards;
     public List<DamageCard> all_damage_cards;
@@ -160,6 +162,8 @@ public class CardManager : MonoBehaviour
     void Update()
     {
         mana_text.text = (mana_total - mana_used) + " / " + mana_total;
+        deck_text.text = "Cards in deck: " + deck.Count;
+        discard_text.text = "Cards in discard: " + discard.Count;
     }
 
 
