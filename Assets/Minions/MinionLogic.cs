@@ -51,7 +51,7 @@ public class MinionLogic : MonoBehaviour
                 {
                     if (unitStats.attackAllInRange)
                     {
-                        GameObject[] gos = unitPhysics.FindAllGameObjectsWithTagInRange("Monster", unitStats.range);
+                        GameObject[] gos = unitPhysics.FindAllGameObjectsWithTagInRange("Monster", unitStats.range + 20);
                         foreach (GameObject go in gos)
                         {
                             MonsterLogic ml = go.GetComponent<MonsterLogic>();
