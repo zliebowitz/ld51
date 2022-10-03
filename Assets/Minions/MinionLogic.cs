@@ -110,6 +110,9 @@ public class MinionLogic : MonoBehaviour
         unitStats.health -= damage;
         if(unitStats.health <= 0)
         {
+            GameObject myPrefab = Resources.Load<GameObject>("Boom");
+            Instantiate(myPrefab, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
     }
