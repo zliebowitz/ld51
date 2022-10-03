@@ -2799,11 +2799,11 @@ PrefabInstance:
       objectReference: {fileID: 1350117447}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_heal_cards.Array.data[0].cost
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_heal_cards.Array.data[0].name
-      value: Heal 1
+      value: Soldier Morale
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_heal_cards.Array.data[1].cost
@@ -2811,7 +2811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_heal_cards.Array.data[1].name
-      value: Heal 2
+      value: Extreme Heal
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[0].cost
@@ -2883,8 +2883,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.data[1].name
-      value: Destory the World 1
+      value: Light of the Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f8e7a2262f78d8045afa710814d0ad86, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a0e118054098c334d8feaf3fd70e67b8, type: 3}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[0].prefab
       value: 
@@ -2942,12 +2950,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a399756fc464d904a8c4754490969e85, type: 3}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d586f59e75011bc4a964a14309262bc7, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 21b84896d2673664d9ea1f4e64b20a1c, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[0].description
+      value: Give all friendly units 5 extra hp.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_heal_cards.Array.data[0].heal_amount
-      value: 3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_heal_cards.Array.data[1].description
+      value: Give all friendly units 30 extra hp!
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_heal_cards.Array.data[1].heal_amount
-      value: 6
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[0].description
@@ -3008,6 +3032,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_damage_cards.Array.data[0].description
+      value: Percise Tower Shot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.data[1].description
       value: Some people just want to see the world burn. AMIRITE?
       objectReference: {fileID: 0}
@@ -3049,7 +3077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.data[1].damage_amount
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
