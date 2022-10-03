@@ -160,6 +160,21 @@ public class GameManager : MonoBehaviour
         if (play == true)
             return;
         turn += 1;
+
+		if (turn == 20)
+		{
+			FindObjectOfType<AudioManager>().PlayMusic("Boss");
+		}
+
+		if (turn >= 33)
+        {
+			GameObject loser = GameObject.Find("GameManager").transform.Find("LoseScreen").gameObject;
+			loser.SetActive(true);
+			GameObject.Find("Defeat").GetComponent<Animator>().SetTrigger("Win");
+			return;
+		}
+
+	
         cardManager.EndTurn();
 		if (turn % turns_between_card_offers == 0)
         {
