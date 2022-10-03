@@ -161,7 +161,7 @@ public class CardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mana_text.text = (mana_total - mana_used) + " / " + mana_total;
+        mana_text.text = "Mana: " + (mana_total - mana_used) + " / " + mana_total;
         deck_text.text = "Cards in deck: " + deck.Count;
         discard_text.text = "Cards in discard: " + discard.Count;
     }
