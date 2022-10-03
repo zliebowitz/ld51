@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitStats:
     health: 40
-    damage: 4
+    damage: 5
     range: 75
     speed: 18
     selfDestructOnAttack: 0

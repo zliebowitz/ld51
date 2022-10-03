@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitStats:
-    health: 60
+    health: 65
     damage: 10
     range: 0
     speed: 23

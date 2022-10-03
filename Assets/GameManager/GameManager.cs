@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
 				int formlessGroup = 55;
 				int bewitchedCost = 65;
 				int devourerCost = 145;
-				int groupCost = 300;
+				int groupCost = 325;
 				
 				float spawnX = 360f;
 				float spawnY = UnityEngine.Random.Range(-5f, 10f);

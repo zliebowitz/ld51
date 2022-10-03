@@ -3513,7 +3513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[2].description
-      value: 40 hp, 4 damage, range unit that deals damage in a large area.
+      value: 40 hp, 5 damage, range unit that deals damage in a large area.
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[2].is_starting
