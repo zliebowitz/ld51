@@ -18,7 +18,11 @@ public class MonsterLogic : MonoBehaviour
         animator = GetComponent<Animator>();
         unitPhysics.Start(this);
 
-        spriteRenderer.sortingOrder = (100 - (int)transform.position.y);
+        var collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            spriteRenderer.sortingOrder = (100 - (int)collider.bounds.min.y);
+        }
     }
 
     // Update is called once per frame
