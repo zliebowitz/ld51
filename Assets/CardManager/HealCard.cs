@@ -20,8 +20,8 @@ public class HealCard : Card
             UnitStats stats = logic.unitStats;
             if (stats == null)
                 continue;
-            // TODO: add max health
-            stats.health = Math.Min(stats.health + heal_amount, stats.maxhealth);
+            // NOTE: ignore max health
+            stats.health = stats.health + heal_amount;
         }
     }
 
