@@ -263,6 +263,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: overcharged_spellstone_explode_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416581d2360b734429ec10e546be189c
+      internalID: 699934449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -279,6 +300,7 @@ TextureImporter:
       overcharged_spellstone_explode_1: -620444005
       overcharged_spellstone_explode_3: 144125631
       overcharged_spellstone_explode_0: -2104150850
+      overcharged_spellstone_explode_7: 699934449
       overcharged_spellstone_explode_4: -845772952
       overcharged_spellstone_explode_2: 151289971
   spritePackingTag: 

@@ -75,8 +75,8 @@ public class MinionLogic : MonoBehaviour
 
                     if(unitStats.selfDestructOnAttack)
                     {
+                        spriteRenderer.enabled = false;// Suppose to make it disappear.
                         Hit(unitStats.health);
-                        spriteRenderer.enabled = false;
                     }
                     attackStarted = false;
                 }
