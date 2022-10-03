@@ -84,7 +84,7 @@ SpriteRenderer:
   m_Size: {x: 128, y: 128.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &6710541650997637768
@@ -156,10 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitStats:
-    maxhealth: 10
-    health: 10
+    maxhealth: 5000
+    health: 5000
     damage: 200
-    range: 40
-    speed: 10
+    range: 80
+    speed: 50
     selfDestructOnAttack: 1
     attackAllInRange: 1

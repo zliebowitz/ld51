@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
 			if (timeToSpawn >= targetTime)
 			{
 				
-				int formlessCost = 12;
+				int formlessCost = 9;
 				int formlessGroup = 50;
 				int bewitchedCost = 65;
 				int devourerCost = 140;
@@ -200,7 +200,7 @@ public class GameManager : MonoBehaviour
 
         TOKObjectController.SetPause(false);
 		
-		waveBalance += (int)(Math.Pow(turn, 1.3) * 10) + 2;
+		waveBalance += (int)(Math.Pow(turn, 1.35) * 10) + 2;
 		
 		timeToSpawn = targetTime;
 		

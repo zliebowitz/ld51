@@ -157,7 +157,7 @@ MonoBehaviour:
     health: 10
     damage: 0
     range: 5
-    speed: 30
+    speed: 25
     selfDestructOnAttack: 0
     attackAllInRange: 0
 --- !u!114 &7955272452677404521

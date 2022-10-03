@@ -170,6 +170,6 @@ MonoBehaviour:
     health: 25
     damage: 15
     range: 10
-    speed: 30
+    speed: 22
     selfDestructOnAttack: 0
-    attackAllInRange: 0
+    attackAllInRange: 1

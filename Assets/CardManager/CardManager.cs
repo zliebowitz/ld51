@@ -24,7 +24,7 @@ public class CardManager : MonoBehaviour
     List<Card> deck = new List<Card>();
     List<Card> discard = new List<Card>();
     List<Card> hand = new List<Card>();
-    int cards_of_each = 5;
+    int cards_of_each = 3;
     int initial_hand_size = 4;
     int mana_used = 0;
     int hand_size_decrease = 0;

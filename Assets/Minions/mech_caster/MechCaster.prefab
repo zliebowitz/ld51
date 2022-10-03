@@ -172,10 +172,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitStats:
-    maxhealth: 1
-    health: 4
-    damage: 4
+    maxhealth: 3
+    health: 3
+    damage: 3
     range: 50
-    speed: 25
+    speed: 20
     selfDestructOnAttack: 0
     attackAllInRange: 0
