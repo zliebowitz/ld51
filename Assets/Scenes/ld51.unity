@@ -2886,6 +2886,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0d47575f9e9706644b8ea67a286a75d6, type: 3}
+    - target: {fileID: 1595407029492877258, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595407029492877258, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595407029492877258, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595407029492877258, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595407029492877258, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1595407030059673438, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3062,6 +3082,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -96392190, guid: f63a2a8a462684e43b5fbde9ba45d643, type: 3}
+    - target: {fileID: 1301306083406227081, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301306083406227081, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301306083406227081, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1301306083406227126, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
       propertyPath: m_Name
       value: Defeat
