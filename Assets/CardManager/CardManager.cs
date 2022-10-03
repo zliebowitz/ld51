@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,12 +23,13 @@ public class CardManager : MonoBehaviour
     int cards_of_each = 5;
     int initial_hand_size = 4;
     int mana_used = 0;
+    int hand_size_decrease = 0;
 
     public static void Shuffle<T>(List<T> list)
     {
         for (int i = 0; i < list.Count; i++)
         {
-            int other = Random.Range(i, list.Count);
+            int other = UnityEngine.Random.Range(i, list.Count);
             T temp = list[i];
             list[i] = list[other];
             list[other] = temp;
@@ -38,7 +40,7 @@ public class CardManager : MonoBehaviour
     {
         for (int i = 0; i < list.Length; i++)
         {
-            int other = Random.Range(i, list.Length);
+            int other = UnityEngine.Random.Range(i, list.Length);
             T temp = list[i];
             list[i] = list[other];
             list[other] = temp;
@@ -85,8 +87,10 @@ public class CardManager : MonoBehaviour
     public void NewTurn()
     {
         mana_used = 0;
-        for (int i = 0; i < initial_hand_size; i++)
+        int hand_size = initial_hand_size - hand_size_decrease;
+        for (int i = 0; i < hand_size; i++)
             Draw();
+        hand_size_decrease = Math.Max(0, hand_size_decrease - initial_hand_size);
     }
 
     public void Draw()
@@ -134,6 +138,12 @@ public class CardManager : MonoBehaviour
         card.Play();
         discard.Add(card);
         ApplyCards();
+    }
+
+
+    public void DecreaseNextHandSize()
+    {
+        hand_size_decrease++;
     }
 
     // Update is called once per frame

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1662259199405569110}
   - component: {fileID: 1662259199405569105}
   - component: {fileID: 1662259199405569104}
+  - component: {fileID: 7955272452677404521}
   m_Layer: 0
   m_Name: FrontlineSupplier
   m_TagString: Untagged
@@ -159,3 +160,15 @@ MonoBehaviour:
     speed: 30
     selfDestructOnAttack: 0
     attackAllInRange: 0
+--- !u!114 &7955272452677404521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662259199405569107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57fc9019dc094a20afdcdc5057edc8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

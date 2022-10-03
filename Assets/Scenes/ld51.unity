@@ -2086,7 +2086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.size
@@ -2133,6 +2133,18 @@ PrefabInstance:
       value: Tamed
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[4].name
+      value: Frontline Supplier
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[5].name
+      value: Fallen Rubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[6].name
+      value: Tamed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.data[0].cost
       value: 1
       objectReference: {fileID: 0}
@@ -2170,6 +2182,30 @@ PrefabInstance:
       objectReference: {fileID: 8922713274719032728, guid: f1b49e7d88e68a94784ddd370ec7b69d, type: 3}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6bb13f9fec5604d6199533da5d2e9ed1, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[4].prefab
+      value: 
+      objectReference: {fileID: 1662259199405569107, guid: 8135a0db5fe296a44ae8cff17d3ad52a, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[4].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[5].prefab
+      value: 
+      objectReference: {fileID: 626128501338728377, guid: c6f6bae07e99bfd42b717c5b16667fa6, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[5].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[6].prefab
+      value: 
+      objectReference: {fileID: 626128501338728377, guid: c6f6bae07e99bfd42b717c5b16667fa6, type: 3}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[6].sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6bb13f9fec5604d6199533da5d2e9ed1, type: 3}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
@@ -2215,6 +2251,30 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[4].description
+      value: Supply me! Supply me now! AMIRITE?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[4].is_starting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[5].description
+      value: No jokes!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[5].is_starting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[6].description
+      value: Also known as whipped! AMIRITE?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[6].is_starting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.data[1].description
       value: Some people just want to see the world burn. AMIRITE?
       objectReference: {fileID: 0}
@@ -2236,6 +2296,18 @@ PrefabInstance:
       objectReference: {fileID: 614724004}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[3].spawnLocation
+      value: 
+      objectReference: {fileID: 614724004}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[4].spawnLocation
+      value: 
+      objectReference: {fileID: 614724004}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[5].spawnLocation
+      value: 
+      objectReference: {fileID: 614724004}
+    - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
+      propertyPath: all_spawn_cards.Array.data[6].spawnLocation
       value: 
       objectReference: {fileID: 614724004}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
