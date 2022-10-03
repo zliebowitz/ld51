@@ -44,5 +44,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c16f45facf074548bdb8c0539c401ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sounds: []
-  Music: []
+  Sounds:
+  - name: Boom
+    clip: {fileID: 8300000, guid: 0a61f4733f2e51042b336091b3047afc, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Haaa
+    clip: {fileID: 8300000, guid: 87d8f3691adf571498d6899a2cab48e9, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Hehhh
+    clip: {fileID: 8300000, guid: ea083538edf9f9847848a381444ed74c, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Rahhh
+    clip: {fileID: 8300000, guid: 785266a5170acb048b96aa7276c1ef58, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Slash
+    clip: {fileID: 8300000, guid: e09737ee2d55bcb489e82bb937638bc8, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  Music:
+  - name: Title
+    clip: {fileID: 8300000, guid: 50e978a2d09158b4598d0a6d606d3108, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: BGM
+    clip: {fileID: 8300000, guid: 6ed4fb21ff1884c498813cb6b5884f54, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Boss
+    clip: {fileID: 8300000, guid: 9a45d70045796fb459628a3dc03bc7e4, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
