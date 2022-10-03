@@ -211,6 +211,10 @@ public class GameManager : MonoBehaviour
 		waveBalance += (int)(Math.Pow(turn, 1.35) * 10) + 2;
 		
 		timeToSpawn = targetTime;
+		if (turn > 30)
+		{
+			waveBalance = 0;
+		}
 		
     }
 

@@ -103,6 +103,11 @@ public class MinionLogic : MonoBehaviour
                 transform.position += Vector3.right * unitStats.speed * Time.fixedDeltaTime;
             }
         }
+		
+		if (transform.position.x > 240)
+		{
+			transform.position = new Vector3(240, transform.position.y,  transform.position.z);
+		}
     }
 
     internal void Hit(int damage)
