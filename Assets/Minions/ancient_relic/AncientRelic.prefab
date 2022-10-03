@@ -168,7 +168,7 @@ MonoBehaviour:
     maxhealth: 30
     health: 30
     damage: 2
-    range: 55
+    range: 75
     speed: 15
     selfDestructOnAttack: 0
     attackAllInRange: 1
