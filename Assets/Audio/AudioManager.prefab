@@ -75,6 +75,12 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: Gunshot
+    clip: {fileID: 8300000, guid: 50c41986694ac4f4b836609a41dc21b6, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
   Music:
   - name: Title
     clip: {fileID: 8300000, guid: 50e978a2d09158b4598d0a6d606d3108, type: 3}
