@@ -8,7 +8,9 @@ public class CardManager : MonoBehaviour
 {
     public List<GameObject> gameCards;  //Populate with inspector
     int max_hand_size; //Set based on gameCards setup.
-    public int mana_total;
+    public int min_mana_total = 2;
+    int mana_total;
+    public int max_mana_total = 8;
     public TextMeshProUGUI mana_text;
     public List<SpawnCard> all_spawn_cards;
     public List<HealCard> all_heal_cards;
@@ -74,6 +76,8 @@ public class CardManager : MonoBehaviour
         // Not strictly needed at the itme of writing, but can deal with alter.
         Shuffle<Card>(deck);
         ApplyCards();
+
+        mana_total = min_mana_total;
     }
 
     // Start is called before the first frame update
@@ -179,5 +183,10 @@ public class CardManager : MonoBehaviour
     {
         // This feels a bit more traditional than adding to the deck.
         discard.Add(card);
+    }
+
+    public void AddMoreMana()
+    {
+        mana_total = Math.Min(mana_total + 1, max_mana_total);
     }
 }

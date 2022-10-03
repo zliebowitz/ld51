@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI turnText;
     int turn = 0;
     public GameObject selectScreen;
-    public int turns_between_card_offers = 5;
-    int waveBalance = 0;
+    public int turns_between_card_offers = 3;
+	public int turns_between_mana_increases = 3;
+	int waveBalance = 0;
     float timeToSpawn = 0;
     
     public TOKObjectController tokController = new TOKObjectController();
@@ -166,7 +167,11 @@ public class GameManager : MonoBehaviour
             return;
         turn += 1;
         cardManager.EndTurn();
-        if (turn % turns_between_card_offers == 0)
+		if (turn % turns_between_card_offers == 0)
+        {
+			cardManager.AddMoreMana();
+        }
+			if (turn % turns_between_card_offers == 0)
         {
             OfferCards();
             return;
