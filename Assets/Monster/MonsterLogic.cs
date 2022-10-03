@@ -71,6 +71,7 @@ public class MonsterLogic : MonoBehaviour
                     if (unitStats.selfDestructOnAttack)
                     {
                         Hit(unitStats.health);
+                        spriteRenderer.enabled = false;
                     }
                     attackStarted = false;
                 }
@@ -96,6 +97,7 @@ public class MonsterLogic : MonoBehaviour
                     if (unitStats.selfDestructOnAttack)
                     {
                         Hit(unitStats.health);
+                        spriteRenderer.enabled = false;
                     }
                     attackStarted = false;
                 }

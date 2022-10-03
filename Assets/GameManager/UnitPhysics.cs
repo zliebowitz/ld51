@@ -45,7 +45,7 @@ public class UnitPhysics
             ColliderDistance2D colliderDistance = collider.Distance(gocolider);
 
             float curDistance = colliderDistance.distance;
-            if (curDistance > range)
+            if (curDistance <= range)
             {
                 rtn.Add(go);
             }
