@@ -42,6 +42,7 @@ public class Tower : MonoBehaviour
         {
             GameObject loser = GameObject.Find("GameManager").transform.Find("LoseScreen").gameObject;
             loser.SetActive(true);
+            loser.transform.Find("Defeat").gameObject.GetComponent<Animator>().SetTrigger("Lose");
         }
         
     }
