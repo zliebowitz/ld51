@@ -3058,6 +3058,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 815400032}
     m_Modifications:
+    - target: {fileID: 1301306083406227081, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -96392190, guid: f63a2a8a462684e43b5fbde9ba45d643, type: 3}
     - target: {fileID: 1301306083406227126, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
       propertyPath: m_Name
       value: Defeat
@@ -3092,11 +3096,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1301306083406227127, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 800
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 1301306083406227127, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1301306083406227127, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
       propertyPath: m_LocalPosition.x
