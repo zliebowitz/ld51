@@ -868,6 +868,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
   m_PrefabInstance: {fileID: 854913604}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &895062061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895062062}
+  m_Layer: 0
+  m_Name: CrystalSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895062062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895062061}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -238, y: 25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927401104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1851,15 +1882,15 @@ PrefabInstance:
     - target: {fileID: 1595407031342294702, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
       propertyPath: monsters_to_spawn.Array.data[0]
       value: 
-      objectReference: {fileID: 7786083469490721450, guid: 838fbb5b5180bc8428c6f9099bd02c9e, type: 3}
+      objectReference: {fileID: 4435746310473713682, guid: 7483fe9989944f542a4d34d6bc8ce599, type: 3}
     - target: {fileID: 1595407031342294702, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
       propertyPath: monsters_to_spawn.Array.data[1]
       value: 
-      objectReference: {fileID: 4435746310473713682, guid: 7483fe9989944f542a4d34d6bc8ce599, type: 3}
+      objectReference: {fileID: 3100995338281189409, guid: 5857e46e67aa9714bbded3f38ac4537e, type: 3}
     - target: {fileID: 1595407031342294702, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
       propertyPath: monsters_to_spawn.Array.data[2]
       value: 
-      objectReference: {fileID: 3100995338281189409, guid: 5857e46e67aa9714bbded3f38ac4537e, type: 3}
+      objectReference: {fileID: 7786083469490721450, guid: 838fbb5b5180bc8428c6f9099bd02c9e, type: 3}
     - target: {fileID: 1595407031342294703, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1906,6 +1937,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b5ac327fe929bd4584dde8fba3ae028, type: 3}
+--- !u!1 &2060799392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060799393}
+  m_Layer: 0
+  m_Name: WallSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060799393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060799392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -25, y: -10.700001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1930147727638917953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2238,11 +2300,11 @@ PrefabInstance:
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[5].spawnLocation
       value: 
-      objectReference: {fileID: 614724004}
+      objectReference: {fileID: 2060799393}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[6].spawnLocation
       value: 
-      objectReference: {fileID: 614724004}
+      objectReference: {fileID: 895062062}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.data[0].damage_amount
       value: 1

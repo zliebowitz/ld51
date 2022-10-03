@@ -167,6 +167,8 @@ MonoBehaviour:
   unitStats:
     maxhealth: 30
     health: 30
-    damage: 8
-    range: 30
-    speed: 8
+    damage: 3
+    range: 55
+    speed: 15
+    selfDestructOnAttack: 0
+    attackAllInRange: 1

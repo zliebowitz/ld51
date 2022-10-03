@@ -52,7 +52,7 @@ public class MonsterLogic : MonoBehaviour
                 {
                     if (unitStats.attackAllInRange)
                     {
-                        GameObject[] gos = unitPhysics.FindAllGameObjectsWithTagInRange("Minion", unitStats.range);
+                        GameObject[] gos = unitPhysics.FindAllGameObjectsWithTagInRange("Minion", unitStats.range + 5);
                         foreach(GameObject go in gos)
                         {
                             MinionLogic ml = go.GetComponent<MinionLogic>();

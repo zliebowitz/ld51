@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public CardManager cardManager;
     public TextMeshProUGUI turnText;
     int turn = 0;
+	int waveBalance = 0;
+	float timeToSpawn = 0;
     
     public TOKObjectController tokController = new TOKObjectController();
     
@@ -45,6 +47,103 @@ public class GameManager : MonoBehaviour
             {
                 timerEnded();
             }
+			
+			if (timeToSpawn >= targetTime)
+			{
+				
+				int formlessCost = 12;
+				int formlessGroup = 50;
+				int bewitchedCost = 65;
+				int devourerCost = 140;
+				int groupCost = 300;
+				
+				float spawnX = 360f;
+				float spawnY = UnityEngine.Random.Range(-5f, 10f);
+				
+				
+				int groupToSpawn = UnityEngine.Random.Range(0, 5);
+				if (groupToSpawn >= 4)
+				{
+					if (waveBalance >= groupCost)
+					{
+						Instantiate(monsters_to_spawn[0], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						Instantiate(monsters_to_spawn[0], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						Instantiate(monsters_to_spawn[1], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						Instantiate(monsters_to_spawn[1], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						Instantiate(monsters_to_spawn[2], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						Instantiate(monsters_to_spawn[2], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						waveBalance -= groupCost;
+					}
+					else
+					{
+						groupToSpawn -= 1;
+					}
+				}
+				if (groupToSpawn == 3)
+				{
+					if (waveBalance >= devourerCost)
+					{
+						Instantiate(monsters_to_spawn[2], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						waveBalance -= devourerCost;
+					}
+					else
+					{
+						groupToSpawn -= 1;
+					}
+				}
+				if (groupToSpawn == 2)
+				{
+					if (waveBalance >= bewitchedCost)
+					{
+						Instantiate(monsters_to_spawn[1], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						waveBalance -= bewitchedCost;
+					}
+					else
+					{
+						groupToSpawn -= 1;
+					}
+				}
+				if (groupToSpawn == 1)
+				{
+					if (waveBalance >= formlessGroup)
+					{
+						Instantiate(monsters_to_spawn[0], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						spawnX += UnityEngine.Random.Range(5f, 15f);
+						spawnY = UnityEngine.Random.Range(-5f, 10f);
+						Instantiate(monsters_to_spawn[0], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						spawnX += UnityEngine.Random.Range(5f, 15f);
+						spawnY = UnityEngine.Random.Range(-5f, 10f);
+						Instantiate(monsters_to_spawn[0], new Vector3(spawnX, spawnY, 0f), Quaternion.identity);
+						waveBalance -= formlessGroup;
+					}
+					else
+					{
+						groupToSpawn -= 1;
+					}
+				}
+				if (groupToSpawn == 0)
+				{
+					if (waveBalance >= formlessCost)
+					{
+						Instantiate(monsters_to_spawn[0], new Vector3(359f, spawnY, 0f), Quaternion.identity);
+						waveBalance -= formlessCost;
+					}
+				}
+				
+				// This abomination takes the largest of three random numbers.
+				timeToSpawn = UnityEngine.Random.Range(0.5f, targetTime);
+				float timeToSpawnSecondary = UnityEngine.Random.Range(0.0f, targetTime);
+				if (timeToSpawn < timeToSpawnSecondary)
+				{
+					timeToSpawn = timeToSpawnSecondary;
+				}
+				timeToSpawnSecondary = UnityEngine.Random.Range(0.0f, targetTime);
+				if (timeToSpawn < timeToSpawnSecondary)
+				{
+					timeToSpawn = timeToSpawnSecondary;
+				}
+			}
+			print(waveBalance);
         }
 
     }
@@ -67,12 +166,17 @@ public class GameManager : MonoBehaviour
         cardManager.EndTurn();
         play = true;
 
-        foreach (var monster in monsters_to_spawn)
+        /*foreach (var monster in monsters_to_spawn)
         {
             Instantiate(monster, new Vector3(209f, 14.9f, 0f), Quaternion.identity);
-        }
+        }*/
 
         TOKObjectController.SetPause(false);
+		
+		waveBalance += (int)(Math.Pow(turn, 1.3) * 10) + 2;
+		
+		timeToSpawn = targetTime;
+		
     }
 
     public void PlayAgain()
