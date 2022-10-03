@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         FindObjectOfType<AudioManager>().PlayMusic("BGM");
-		cardManager->NewTurn();
+		cardManager.NewTurn();
 	}
 
 	// Update is called once per frame
