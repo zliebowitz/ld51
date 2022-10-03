@@ -46,31 +46,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sounds:
   - name: Boom
-    clip: {fileID: 8300000, guid: 0a61f4733f2e51042b336091b3047afc, type: 3}
+    clip: {fileID: 8300000, guid: 80c9cfaf06279864da625ba9724375a2, type: 3}
     volume: 0.75
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: Haaa
-    clip: {fileID: 8300000, guid: 87d8f3691adf571498d6899a2cab48e9, type: 3}
+    clip: {fileID: 8300000, guid: 7d3653b757e22ea4cb984acabeb6b2b8, type: 3}
     volume: 0.75
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: Hehhh
-    clip: {fileID: 8300000, guid: ea083538edf9f9847848a381444ed74c, type: 3}
+    clip: {fileID: 8300000, guid: 1bd0ad0cdce27ea48aeef30337219c16, type: 3}
     volume: 0.75
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: Rahhh
-    clip: {fileID: 8300000, guid: 785266a5170acb048b96aa7276c1ef58, type: 3}
+    clip: {fileID: 8300000, guid: 977a3b34f6719d04b91be5a19a0fcefa, type: 3}
     volume: 0.75
     pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: Slash
-    clip: {fileID: 8300000, guid: e09737ee2d55bcb489e82bb937638bc8, type: 3}
+    clip: {fileID: 8300000, guid: dbcfd9ddc85eb4846ba85bb343ddecf8, type: 3}
     volume: 0.75
     pitch: 1
     source: {fileID: 0}
