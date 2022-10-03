@@ -2086,7 +2086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.size
@@ -2142,7 +2142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[6].name
-      value: Tamed
+      value: Overcharged Spellstone
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_damage_cards.Array.data[0].cost
@@ -2203,11 +2203,11 @@ PrefabInstance:
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[6].prefab
       value: 
-      objectReference: {fileID: 626128501338728377, guid: c6f6bae07e99bfd42b717c5b16667fa6, type: 3}
+      objectReference: {fileID: 6710541650997637775, guid: 9e066bb090fc27c4f91fd485c19968c0, type: 3}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[6].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6bb13f9fec5604d6199533da5d2e9ed1, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_heal_cards.Array.data[0].heal_amount
       value: 3
@@ -2268,7 +2268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[6].description
-      value: Also known as whipped! AMIRITE?
+      value: You paid too much! Way too much! AMIRITE?
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[6].is_starting
