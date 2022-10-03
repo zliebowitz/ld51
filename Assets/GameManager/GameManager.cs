@@ -141,7 +141,6 @@ public class GameManager : MonoBehaviour
 					timeToSpawn = timeToSpawnSecondary;
 				}
 			}
-			print(waveBalance);
         }
 
     }
