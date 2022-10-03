@@ -1,11 +1,11 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 public class GameCard : MonoBehaviour
 {
-    CardManager manager = null;
+    public UnityEvent<Card> onClickEvent;
     Card card = null;
     public SpriteRenderer squareRenderer = null;
     public TextMeshProUGUI nameText;
@@ -32,7 +32,6 @@ public class GameCard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        manager = GameObject.Find("CardManager").GetComponent<CardManager>();
     }
 
     // Update is called once per frame
@@ -44,7 +43,6 @@ public class GameCard : MonoBehaviour
 
     void OnMouseDown()
     {
-        manager.PlayCard(card);
-        // NOTE: the manager is in charge of refreshing afterwards.
+        onClickEvent.Invoke(card);
     }
 }

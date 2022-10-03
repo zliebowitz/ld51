@@ -14,6 +14,8 @@ public class CardManager : MonoBehaviour
     public List<HealCard> all_heal_cards;
     public List<DamageCard> all_damage_cards;
 
+    public List<GameObject> selectionCards;
+
 
     List<Card> all_cards = new List<Card>();
 
@@ -51,10 +53,14 @@ public class CardManager : MonoBehaviour
     {
         max_hand_size = gameCards.Count;
 
-       foreach (var c in all_spawn_cards)
+        foreach (var c in all_spawn_cards)
+            all_cards.Add(c);
+        foreach (var c in all_heal_cards)
+            all_cards.Add(c);
+        foreach (var c in all_damage_cards)
             all_cards.Add(c);
 
-       foreach (var card in all_cards)
+        foreach (var card in all_cards)
         {
             if (card.is_starting)
             {
@@ -150,5 +156,28 @@ public class CardManager : MonoBehaviour
     void Update()
     {
         mana_text.text = (mana_total - mana_used) + " / " + mana_total;
+    }
+
+
+    public void OfferCards()
+    {
+        List<Card> already_selected = new List<Card>();
+        foreach (var gc in selectionCards)
+        {
+            int i;
+            do
+            {
+                i = UnityEngine.Random.Range(0, all_cards.Count);
+            } while (all_cards[i].is_starting || already_selected.Contains(all_cards[i]));
+            gc.GetComponent<GameCard>().ApplyCard(all_cards[i]);
+            already_selected.Add(all_cards[i]);
+        }
+    }
+
+
+    public void AddCard(Card card)
+    {
+        // This feels a bit more traditional than adding to the deck.
+        discard.Add(card);
     }
 }

@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public CardManager cardManager;
     public TextMeshProUGUI turnText;
     int turn = 0;
+    public GameObject selectScreen;
+    public int turns_between_card_offers = 5;
     
     public TOKObjectController tokController = new TOKObjectController();
     
@@ -65,6 +67,26 @@ public class GameManager : MonoBehaviour
             return;
         turn += 1;
         cardManager.EndTurn();
+        if (turn % turns_between_card_offers == 0)
+        {
+            OfferCards();
+            return;
+        }
+
+        ResumePlaying();
+    }
+
+    public void PostCardOffered(Card c)
+    {
+        // callback function, ignores card purposefully ...
+        selectScreen.SetActive(false);
+        ResumePlaying();
+    }
+
+    void ResumePlaying()
+    {
+        // horribly named function ...
+        // basically we need two entry points so we made a function ...
         play = true;
 
         foreach (var monster in monsters_to_spawn)
@@ -73,6 +95,12 @@ public class GameManager : MonoBehaviour
         }
 
         TOKObjectController.SetPause(false);
+    }
+
+    void OfferCards()
+    {
+        selectScreen.SetActive(true);
+        cardManager.OfferCards();
     }
 
     public void PlayAgain()
