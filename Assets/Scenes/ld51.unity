@@ -1074,7 +1074,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927401104
 PrefabInstance:
@@ -1483,17 +1483,9 @@ PrefabInstance:
       propertyPath: onClickEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 1091517770181023798, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 32767
-      objectReference: {fileID: 0}
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
       value: GameCardLeft
-      objectReference: {fileID: 0}
-    - target: {fileID: 3965640360122172099, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 32767
       objectReference: {fileID: 0}
     - target: {fileID: 3965640360122172099, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_OverrideSorting
@@ -1774,17 +1766,9 @@ PrefabInstance:
       propertyPath: onClickEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 1091517770181023798, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 32767
-      objectReference: {fileID: 0}
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
       value: GameCardRight
-      objectReference: {fileID: 0}
-    - target: {fileID: 3965640360122172099, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 32767
       objectReference: {fileID: 0}
     - target: {fileID: 3965640360122172099, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_OverrideSorting
@@ -2452,7 +2436,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1894195484
 Canvas:
   m_ObjectHideFlags: 0
@@ -2680,7 +2664,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1930147727638917953
 PrefabInstance:
