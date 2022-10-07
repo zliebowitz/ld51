@@ -24,39 +24,7 @@ public class UnitPhysics
 
     public Tuple<GameObject, float> ClosestMonsterDistance()
     {
-        return ClosestTaggedDistance("Monster");
-    }
-
-    public Tuple<GameObject, float> ClosestMinionDistance()
-    {
-        return ClosestTaggedDistance("Minion");
-    }
-
-    public GameObject[] FindAllGameObjectsWithTagInRange(string tag, float range)
-    {
-        List<GameObject> rtn = new List<GameObject>();
-        GameObject[] gos;
-        gos = GameObject.FindGameObjectsWithTag(tag);
-        //Debug.Log(tag + " Found: " + gos.Length);
-        Vector3 position = gameObject.transform.position;
-        foreach (GameObject go in gos)
-        {
-            Collider2D gocolider = go.GetComponent<Collider2D>();
-            ColliderDistance2D colliderDistance = collider.Distance(gocolider);
-
-            float curDistance = colliderDistance.distance;
-            if (curDistance <= range)
-            {
-                rtn.Add(go);
-            }
-        }
-
-        return rtn.ToArray();
-
-    }
-
-    public Tuple<GameObject, float> ClosestTaggedDistance(string tag)
-    {
+        string tag = "Monster";
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag(tag);
         //Debug.Log(tag + " Found: " + gos.Length);
@@ -71,12 +39,95 @@ public class UnitPhysics
             float curDistance = colliderDistance.distance;
             if (curDistance < distance)
             {
-                closest = go;
-                distance = curDistance;
+                MonsterLogic logic = go.GetComponent<MonsterLogic>();
+                if (logic.unitStats.health > 0)
+                {
+                    closest = go;
+                    distance = curDistance;
+                }
             }
         }
         //Debug.Log("Closest " + tag + " with gameobject: " + closest.ToString() + " Distance: " + distance.ToString());
         return new Tuple<GameObject, float>(closest, distance);
+    }
+
+    public Tuple<GameObject, float> ClosestMinionDistance()
+    {
+        string tag = "Minion";
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag(tag);
+        //Debug.Log(tag + " Found: " + gos.Length);
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = gameObject.transform.position;
+        foreach (GameObject go in gos)
+        {
+            Collider2D gocolider = go.GetComponent<Collider2D>();
+            ColliderDistance2D colliderDistance = collider.Distance(gocolider);
+
+            float curDistance = colliderDistance.distance;
+            if (curDistance < distance)
+            {
+                MinionLogic logic = go.GetComponent<MinionLogic>();
+                if (logic.unitStats.health > 0)
+                {
+                    closest = go;
+                    distance = curDistance;
+                }
+            }
+        }
+        //Debug.Log("Closest " + tag + " with gameobject: " + closest.ToString() + " Distance: " + distance.ToString());
+        return new Tuple<GameObject, float>(closest, distance);
+    }
+
+    public GameObject[] FindAllMinionsInRange(float range)
+    {
+        string tag = "Minion";
+        List<GameObject> rtn = new List<GameObject>();
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag(tag);
+        //Debug.Log(tag + " Found: " + gos.Length);
+        Vector3 position = gameObject.transform.position;
+        foreach (GameObject go in gos)
+        {
+            Collider2D gocolider = go.GetComponent<Collider2D>();
+            ColliderDistance2D colliderDistance = collider.Distance(gocolider);
+
+            float curDistance = colliderDistance.distance;
+            if (curDistance <= range)
+            {
+                MinionLogic logic = go.GetComponent<MinionLogic>();
+                if (logic.unitStats.health > 0)
+                    rtn.Add(go);
+            }
+        }
+
+        return rtn.ToArray();
+    }
+
+    public GameObject[] FindAllMonstersnRange(float range)
+    {
+        string tag = "Monster";
+        List<GameObject> rtn = new List<GameObject>();
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag(tag);
+        //Debug.Log(tag + " Found: " + gos.Length);
+        Vector3 position = gameObject.transform.position;
+        foreach (GameObject go in gos)
+        {
+            Collider2D gocolider = go.GetComponent<Collider2D>();
+            ColliderDistance2D colliderDistance = collider.Distance(gocolider);
+
+            float curDistance = colliderDistance.distance;
+            if (curDistance <= range)
+            {
+                MonsterLogic logic = go.GetComponent<MonsterLogic>();
+                if (logic.unitStats.health > 0)
+                    rtn.Add(go);
+            }
+        }
+
+        return rtn.ToArray();
     }
 
     public float TowerDistance()
