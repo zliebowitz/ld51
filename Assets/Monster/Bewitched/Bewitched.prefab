@@ -171,4 +171,4 @@ MonoBehaviour:
     range: 30
     speed: 16
     selfDestructOnAttack: 0
-    attackAllInRange: 1
+    attackAllInRange: 0
