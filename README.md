@@ -1,4 +1,4 @@
-# ld51
+# Tower of Kraduul
 A deck building/tower defense hybrid where you take command of an army to defend Kraduul’s last settlement of humanity against hordes of unbidden.
 
 Controls: Click on a card to play it. You can only play a card if you have enough mana. When you are done playing cards, press the end turn button, and your minions will march their way to fight against the unbidden. 10 seconds later, your mana will refill and you draw more cards to play.
