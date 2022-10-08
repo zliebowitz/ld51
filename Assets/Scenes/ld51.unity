@@ -951,6 +951,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1398839739787840160, guid: 8ce2c0a4e4a01c34da0b54024d62eec0, type: 3}
+      propertyPath: unitStats.health
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 2448769135463501124, guid: 8ce2c0a4e4a01c34da0b54024d62eec0, type: 3}
       propertyPath: m_Name
       value: Tower
@@ -1811,9 +1815,29 @@ PrefabInstance:
       propertyPath: onClickEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Size.x
+      value: 82.31962
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Size.y
+      value: 108.989876
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.23196793
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.927845
+      objectReference: {fileID: 0}
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
       value: GameCardLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3965640360122172099, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_OverrideSorting
@@ -2093,6 +2117,22 @@ PrefabInstance:
     - target: {fileID: -6803254581556447784, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: onClickEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Size.x
+      value: 83.24747
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Size.y
+      value: 108.525955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.23196411
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.6958847
       objectReference: {fileID: 0}
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
@@ -3168,7 +3208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1301306083406227127, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 1301306083406227127, guid: f3275a11f8f3733498cb0a4a612de84a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
