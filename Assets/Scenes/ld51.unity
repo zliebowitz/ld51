@@ -1816,20 +1816,8 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
-      propertyPath: m_Size.x
-      value: 82.31962
-      objectReference: {fileID: 0}
-    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
-      propertyPath: m_Size.y
-      value: 108.989876
-      objectReference: {fileID: 0}
-    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.23196793
-      objectReference: {fileID: 0}
-    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.927845
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Name
@@ -1899,6 +1887,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
   m_PrefabInstance: {fileID: 1234341224}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1234341230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234341226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d61a718cf82314b9211d280826ad67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1339134924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2127,6 +2127,10 @@ PrefabInstance:
       value: 108.525955
       objectReference: {fileID: 0}
     - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424568538056646323, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
       propertyPath: m_Offset.x
       value: 0.23196411
       objectReference: {fileID: 0}
@@ -2198,6 +2202,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1930520716060612063, guid: 15a3033592dd8d74ebb1d38ea5344f0f, type: 3}
   m_PrefabInstance: {fileID: 1350117445}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1350117451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350117447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d61a718cf82314b9211d280826ad67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1391956216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,7 +2821,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1894195484
 Canvas:
   m_ObjectHideFlags: 0
@@ -3553,7 +3569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[2].description
-      value: 40 hp, 5 damage, range unit that deals damage in a large area.
+      value: 40 hp, 4 damage, range unit that deals damage in a large area.
       objectReference: {fileID: 0}
     - target: {fileID: 8302398489245074165, guid: 145f7a383e37c2442914ee75fd1cf895, type: 3}
       propertyPath: all_spawn_cards.Array.data[2].is_starting
